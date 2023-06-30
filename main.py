@@ -1,5 +1,5 @@
 import sqlite3
-#test2[[[
+
 with sqlite3.connect('Book.db') as db:
     cursor = db.cursor()
     query = """
