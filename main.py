@@ -26,7 +26,6 @@ with sqlite3.connect('Book.db') as db:
 
     cursor.executescript(query)
     cursor.execute("SELECT book_name, avtor_id FROM books WHERE avtor_id = 1")
-    print(cursor.fetchall())
     cursor.execute("SELECT book_name,cost FROM books WHERE cost = 240")
     for i in cursor.fetchall():
         print(i[0], 'Цена:' ,i[1])
